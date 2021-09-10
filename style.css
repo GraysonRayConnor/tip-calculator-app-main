@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Space Mono", monospace;
+  background: #c5e4e7;
+}
+
+label {
+  display: block;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #5e7a7d;
+}
+
+input {
+  display: block;
+  font-family: "Space Mono", monospace;
+  font-size: 2.5rem;
+  border: none;
+  padding: 0.25rem 1rem;
+  width: 100%;
+  text-align: right;
+  background-size: 1rem;
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-color: #f4fafa;
+  color: #00494d;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+button {
+  font-family: "Space Mono", monospace;
+  border: none;
+  border-radius: 8px;
+}
+
+h1 {
+  color: #5e7a7d;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin: 3rem auto;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+main {
+  background: white;
+  padding: 3rem;
+  border-radius: 2rem;
+}
+
+#inputSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#billInputContainer {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#billInputContainer input {
+  display: block;
+  font-family: "Space Mono", monospace;
+  font-size: 2.5rem;
+  border: none;
+  padding: 0.25rem 1rem;
+  width: 100%;
+  text-align: right;
+  background-size: 1rem;
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-color: #f4fafa;
+  color: #00494d;
+  font-weight: bold;
+  border-radius: 5px;
+  background-image: url(images/icon-dollar.svg);
+}
+
+#tipPercentageContainer p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #5e7a7d;
+  margin-bottom: 1.5rem;
+}
+
+#tipPercentageBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#tipPercentageBtns .tipBtn {
+  width: 48%;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0;
+  background: #00494d;
+  color: #ffffff;
+}
+
+#tipPercentageBtns input {
+  width: 48%;
+  padding: 0.5rem 1rem 0.5rem 0;
+  position: relative;
+  bottom: 0.65rem;
+}
+
+#tipPercentageBtns input::-webkit-input-placeholder {
+  color: #5e7a7d;
+}
+
+#tipPercentageBtns input:-ms-input-placeholder {
+  color: #5e7a7d;
+}
+
+#tipPercentageBtns input::-ms-input-placeholder {
+  color: #5e7a7d;
+}
+
+#tipPercentageBtns input::placeholder {
+  color: #5e7a7d;
+}
+
+#numberOfPeopleContainer label {
+  margin-bottom: 0.5rem;
+}
+
+#numberOfPeopleContainer input {
+  background-image: url(images/icon-person.svg);
+}
+
+#outputSection {
+  background: #00494d;
+  border-radius: 1.5rem;
+  margin: 3rem 0 0 0;
+  padding: 4rem 2rem 2rem 2rem;
+  text-align: center;
+}
+
+#outputSection button {
+  width: 95%;
+  background: #26c0ab;
+  color: #00494d;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.75rem;
+  padding: 1rem 0;
+  border-radius: 5px;
+}
+
+.outputInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.outputInfo .leftLabel {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.outputInfo .personP {
+  font-size: 1.25rem;
+  color: #7f9c9f;
+}
+
+.op {
+  color: #26c0ab;
+  font-size: 3rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
