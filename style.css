@@ -25,7 +25,6 @@ input {
   font-size: 2.5rem;
   border: none;
   padding: 0.25rem 1rem;
-  width: 100%;
   text-align: right;
   background-size: 1rem;
   background-repeat: no-repeat;
@@ -34,6 +33,24 @@ input {
   color: #00494d;
   font-weight: bold;
   border-radius: 5px;
+  width: 100%;
+  color: #00494d;
+}
+
+input::-webkit-input-placeholder {
+  color: #c5e4e7;
+}
+
+input:-ms-input-placeholder {
+  color: #c5e4e7;
+}
+
+input::-ms-input-placeholder {
+  color: #c5e4e7;
+}
+
+input::placeholder {
+  color: #c5e4e7;
 }
 
 button {
@@ -74,8 +91,8 @@ main {
 }
 
 #billInputContainer {
-  width: 100%;
   margin-bottom: 2rem;
+  width: 100%;
 }
 
 #billInputContainer input {
@@ -84,7 +101,6 @@ main {
   font-size: 2.5rem;
   border: none;
   padding: 0.25rem 1rem;
-  width: 100%;
   text-align: right;
   background-size: 1rem;
   background-repeat: no-repeat;
@@ -132,27 +148,33 @@ main {
   color: #ffffff;
 }
 
-#tipPercentageBtns input {
+#tipPercentageBtns #customPercentage {
   width: 48%;
-  padding: 0.5rem 1rem 0.5rem 0;
   position: relative;
-  bottom: 0.65rem;
+  text-align: center;
+  border-radius: 8px;
+  background: #f4fafa;
+  color: #00494d;
 }
 
-#tipPercentageBtns input::-webkit-input-placeholder {
+#tipPercentageBtns #customPercentage::-webkit-input-placeholder {
   color: #5e7a7d;
 }
 
-#tipPercentageBtns input:-ms-input-placeholder {
+#tipPercentageBtns #customPercentage:-ms-input-placeholder {
   color: #5e7a7d;
 }
 
-#tipPercentageBtns input::-ms-input-placeholder {
+#tipPercentageBtns #customPercentage::-ms-input-placeholder {
   color: #5e7a7d;
 }
 
-#tipPercentageBtns input::placeholder {
+#tipPercentageBtns #customPercentage::placeholder {
   color: #5e7a7d;
+}
+
+#numberOfPeopleContainer {
+  width: 100%;
 }
 
 #numberOfPeopleContainer label {
@@ -198,6 +220,7 @@ main {
           align-items: center;
   font-weight: bold;
   margin-bottom: 3rem;
+  text-align: left;
 }
 
 .outputInfo .leftLabel {
@@ -217,10 +240,121 @@ main {
 
 .attribution {
   font-size: 11px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
   text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .attribution a {
   color: #3e52a3;
+}
+
+.btn-active {
+  background: #26c0ab !important;
+}
+
+@media only screen and (min-width: 700px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  #inputSection {
+    width: 40%;
+  }
+  #outputSection {
+    width: 55%;
+    margin: 0;
+  }
+  .outputInfo:nth-child(2) {
+    margin-bottom: 17.75rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #inputSection {
+    width: 45%;
+  }
+  #outputSection {
+    width: 50%;
+  }
+  .outputInfo:nth-child(2) {
+    margin-bottom: 17.75rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+  h1 {
+    margin: 5rem auto 0 auto;
+  }
+  main {
+    margin-top: 5rem;
+  }
+  #billInputContainer {
+    margin-bottom: 4rem;
+  }
+  #tipPercentageBtns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3rem;
+  }
+  #tipPercentageBtns .tipBtn {
+    width: 32%;
+  }
+  #tipPercentageBtns #customPercentage {
+    width: 32%;
+    font-size: 2.25rem;
+    padding: 0.75rem 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    width: 80%;
+    max-width: 85rem;
+  }
+  #outputSection {
+    padding: 4rem 3rem 3rem 3rem;
+  }
+  .outputInfo:nth-child(2) {
+    margin-bottom: 12rem;
+  }
+  .op {
+    font-size: 4rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
 		<link
 			rel="icon"
 			type="image/png"
@@ -25,22 +24,27 @@
 			<section id="inputSection">
 				<div id="billInputContainer">
 					<label for="billInput">bill</label>
-					<input id="billInput" type="text" value="0" />
+					<input id="billInput" type="text" placeholder="0" />
 				</div>
 				<div id="tipPercentageContainer">
 					<p>select tip %</p>
 					<div id="tipPercentageBtns">
-						<button class="tipBtn" data-selection="5">5%</button>
-						<button class="tipBtn" data-selection="10">10%</button>
-						<button class="tipBtn" data-selection="15">15%</button>
-						<button class="tipBtn" data-selection="25">25%</button>
-						<button class="tipBtn" data-selection="50">50%</button>
-						<input id="customPercentage" type="text" placeholder="Custom" />
+						<button class="tipBtn">5%</button>
+						<button class="tipBtn">10%</button>
+						<button class="tipBtn btn-active">15%</button>
+						<button class="tipBtn">25%</button>
+						<button class="tipBtn">50%</button>
+						<input
+							id="customPercentage"
+							class="tipBtn"
+							type="text"
+							placeholder="Custom"
+						/>
 					</div>
 				</div>
 				<div id="numberOfPeopleContainer">
 					<label for="numberOfPeople"> Number of People</label>
-					<input type="text" value="0" />
+					<input id="numPeopleInput" type="text" placeholder="1" />
 				</div>
 			</section>
 			<section id="outputSection">
@@ -50,48 +54,27 @@
 						<p class="personP">/ person</p>
 					</div>
 					<div class="op">
-						<p id="amountOutput">$4.27</p>
+						<p id="amountOutput">$0.00</p>
 					</div>
 				</div>
 				<div class="outputInfo" id="totalContainer">
 					<div class="left" id="totalLabel">
-						<p class="leftLabel">Total</p>
+						<p class="leftLabel">Total + Tip</p>
 						<p class="personP">/ person</p>
 					</div>
 					<div class="op">
-						<p id="totalOutput">$32.79</p>
+						<p id="totalOutput">$0.00</p>
 					</div>
 				</div>
 				<button id="reset">reset</button>
 			</section>
 		</main>
-
-		<!--Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset-->
-
-		<div class="attribution">
+		<!--<div class="attribution">
 			Challenge by
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
-		</div>
-		<script type="text/javascript"></script>
+			>. Coded by <a href="#">Grayson Connor</a>.
+		</div>-->
+		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
